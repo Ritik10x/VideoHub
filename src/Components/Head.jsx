@@ -3,7 +3,7 @@ import { toggleMenu } from "../Utils/appSlice"
 import { useEffect, useState } from "react"
 import { Youtube_Search_Api } from "../Utils/Constant"
 import { cacheResults } from "../Utils/searchSclice"
-
+import plutoImage from "../assets/images/PlutoPlay.png"
 const Head =()=>{
 // for search and input things
 const [searchQuerry,setSearchQuerry]=useState('')
@@ -147,8 +147,10 @@ const getSerchSuggestion = async ()=>{
             
             
             <a href="">
-            <img className="h-8 mx-2"
-             src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png?20170829160812" alt="youtubeLogo" />
+            {/* <img className="h-8 mx-2 w-full"  */}
+            <img className="h-[45px] mx-2 mt-[-10px] w-full" 
+             src={plutoImage} alt="youtubeLogo" />
+             {/* src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png?20170829160812" alt="youtubeLogo" /> */}
              </a>
         </div>
         <div className=" col-span-10 px-10">
